@@ -1,0 +1,30 @@
+site_name: My site
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  font:
+    text: IBM Plex Sans
+    code: JetBrains Mono
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: wcsharp
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
