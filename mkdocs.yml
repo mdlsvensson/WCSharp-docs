@@ -1,10 +1,22 @@
-site_name: My site
-site_url: https://mydomain.org/mysite
+site_name: WCSharp Documentation
+site_url: https://mdlsvensson.github.io/WCSharp-docs
 theme:
   name: material
+  features:
+    - search.highlight
+    - search.suggest
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    # - navigation.prune
+    - toc.follow
   font:
     text: IBM Plex Sans
-    code: JetBrains Mono
+    code: Fira Code
   palette:
     # Light Mode
     - media: "(prefers-color-scheme: light)"
@@ -28,3 +40,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+plugins:
+  - search
