@@ -1,3 +1,5 @@
+# WCSharp.W3MMD
+
 This is a port of W3MMD for C#, a standard for storing game metadata into replay files, which parsers can then utilise in order to display relevant or interesting information about what happened during the game.
 
 Other sources of information on W3MMD:

@@ -1,3 +1,5 @@
+# WCSharp.Effects
+
 System is a big word, unlike this "system".
 
 This system exists due to an unfortunate quirk in Reforged. Many effects do not display properly if you immediately destroy them, as you would before Reforged.  

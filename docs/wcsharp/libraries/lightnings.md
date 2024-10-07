@@ -1,3 +1,5 @@
+# WCSharp.Lightings
+
 **For basic information on lightning effects, please consult [this thread](https://www.hiveworkshop.com/threads/beginners-guide-to-lightning-effects.220370/) on Hiveworkshop.**
 
 The lightning system offers the following features:
@@ -7,7 +9,7 @@ The lightning system offers the following features:
 * Automatically follows moving units, if supplied
 * Supports both lightning effects that last a pre-determined duration, or until cancelled.
 
-# Usage
+## Usage
 
 The lightning system is similar in use to the Knockback system, in that you simply need to create a new Lightning object, and then add it to the system using `LightningSystem.Add(<lightning>)`.
 
@@ -26,7 +28,7 @@ LightningSystem.Add(lightning);
 
 Note that, if Caster/TargetHeightOffset are not specified, the lightning will be directly on the ground, which will often look strange.
 
-# Properties
+## Properties
 
 | Name | Description |
 |---|---|

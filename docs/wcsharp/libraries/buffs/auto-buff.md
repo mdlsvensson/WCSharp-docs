@@ -1,3 +1,5 @@
+# AutoBuff
+
 AutoBuff adds the following properties:
 
 | Name | Description |

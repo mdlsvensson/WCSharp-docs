@@ -10,7 +10,7 @@ The buff system offers the following features:
 * Optionally handles periodic damage/healing ticks.
 * Optionally handles binding to in-game buffs (e.g. for tooltips).
 
-# System
+## System
 
 The buff system has several features for easily interacting with buffs contained in the system:
 
@@ -19,7 +19,7 @@ The buff system has several features for easily interacting with buffs contained
 * The `RegisterForOwnershipChanges` method can be used to register for events to automatically update `CastingPlayer` and `TargetPlayer` when a unit switches ownership.
 * The `Dispel` method can be used in conjunction with properties on buffs to create complex dispel behaviours. For more information, see [buff dispelling](buff-dispelling.md).
 
-# Type overview
+## Type overview
 
 There are 5 base buffs defined that behave differently. These implement some more advanced behaviour, so you can use one of the complexity that meets your requirements. These are as follows:
 
@@ -29,7 +29,7 @@ There are 5 base buffs defined that behave differently. These implement some mor
 * [RollingBuff](rolling-buff.md): This is a specialised buff to manage multiple sub-buffs (stacks), each with their own duration, while only the "top-level" buff ticks.
 * [BoundBuff](bound-buff.md): This buff implements special logic to handle connecting it to an in-game buff, which can be applied either via [WCSharp.Dummies](../dummies.md) or via an in-game aura. Besides the binding mechanic, it is functionally identical to the [TickingBuff](ticking-buff.md).
 
-# Events
+## Events
 
 | Name | Description |
 |---|---|
@@ -40,7 +40,7 @@ There are 5 base buffs defined that behave differently. These implement some mor
 | OnExpire | Executes when the buff expires by reaching the end of its duration. Does not trigger when the buff is removed via a dispel or target dies. |
 | OnTick | Executes every given interval. Present on most, but not all, buffs. |
 
-# Properties
+## Properties
 
 | Name | Description |
 |---|---|

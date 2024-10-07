@@ -1,3 +1,5 @@
+# Save/Load Storage Space
+
 **Use of this package requires that the compilers IsExportMetadata property is set to true.**
 
 In a nutshell, the save/load system uses some curious WarCraft III interactions to store a file on disk, and in the next game we can set tooltips to previously defined values using this file. This is a bit of a convoluted approach, but it's the best we have right now.

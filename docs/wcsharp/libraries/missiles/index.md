@@ -1,3 +1,5 @@
+# WCSharp.Missiles
+
 The missile system offers the following features:
 
 * Automatically manages any number of missiles on the whole map
@@ -5,7 +7,7 @@ The missile system offers the following features:
 * Automatically handles things such as the target dying or hitting the edge of the map
 * Can be extended with custom code on events such as impact or collision to perform any desired behaviour
 
-# Usage
+## Usage
 
 The missile system is implemented in a manner similar to the buff system. To create any new missile, you will first want to create a new class, and implement one of the missile subtypes. For example, BasicMissile:
 
@@ -65,7 +67,7 @@ Note that, unless Caster/TargetHeightOffset are defined, the projectile will ori
 
 As the missile is its own class, it is easily extendable and usable in various ways.  For example, instead of always having the effect scale be the same, it can be based on the level of the ability.
 
-# Type overview
+## Type overview
 
 There are 5 missile types defined that each behave in a different manner. You can use any given type based on the trajectory that you want your missile to fly. Currently, the following types of missiles exist:
 
@@ -75,7 +77,7 @@ There are 5 missile types defined that each behave in a different manner. You ca
 * [MomentumMissile](momentum-missile.md) - This is a missile that homes in on targets by accelerating towards the target at a fixed acceleration speed. It will attempt to make intelligent adjustments to its course by essentially "overcompensating" in the direction that the target is, compared to the direction that it is currently flying at. If it misses, it will decelerate and go in the opposite direction.
 * [OrbitalMissile](orbital-missile.md) - This is a missile that will orbit the given target unit or location. The speed can be set either in units per second, or orbital period.
 
-# Events
+## Events
 
 | Name | Description |
 |---|---|
@@ -84,7 +86,7 @@ There are 5 missile types defined that each behave in a different manner. You ca
 | OnCollision | Override this method if your missile has an effect that should trigger when colliding with another unit. For this to be active, CollisionRadius must be greater than 0. Note that there is no filter on this collision. This is called whenever it collides with anything not in the TargetsHit property. Before this method is called, the unit is added to TargetsHit. |
 | OnDispose | Override this method if your missile has an effect that should trigger when it is destroyed for any reason. |
 
-# Properties
+## Properties
 
 Below is an overview of all the properties available on the various missile types. The "required" essentially details which one of these you should set on launch. It's technically never required to do so, as the system doesn't mind if a missile has e.g. 0 speed (or even negative), but this is just for easy look up to ensure that you set a new missile up properly, and remembering what important properties you might have forgotten.
 

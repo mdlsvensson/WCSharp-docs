@@ -1,16 +1,18 @@
+# WCSharp.Knockbacks
+
 The knockback system provides the following features:
 
 * Supports any number of knockbacks, potentially multiple on the same unit
 * Customise the distance and duration of knockbacks
 * Via "reversing the arguments", can also be used to pull enemies towards a location
 
-# Usage
+## Usage
 
 Performing a knockback on a unit is simple, all you need to do is create a new Knockback object using one of the two constructors, which specify either an angle or a position to fly towards, and add it to the system using `KnockbackSystem.Add(<knockback>);`. Each constructor also allows you to set the distance and duration of the knockback.
 
 To calculate the angle of the knockback, you can use the `AngleBetweenPoints` methods located in `WCSharp.Utils`.
 
-# Properties
+## Properties
 
 | Name | Description |
 |---|---|

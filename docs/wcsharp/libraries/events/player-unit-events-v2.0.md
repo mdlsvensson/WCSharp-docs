@@ -2,10 +2,12 @@
 status: deprecated
 ---
 
+# PlayerUnitEvents v2.0
+
 !!! warning
 	This version of WCSharp.Events has been deprecated. For the v2.1+ version, see [PlayerUnitEvents v2.1](player-unit-events.md).
 
-# Description
+## Description
 
 The PlayerUnitEvents system is a powerful system to replace the native `playerunitevent` events, with a focus on improving performance. It offers the following features:
 
@@ -17,7 +19,7 @@ The PlayerUnitEvents system is a powerful system to replace the native `playerun
 * Provides numerous new events for ease of use. These events still rely on the natives behind the scenes, therefore not incurring additional performance costs. They only exist to simplify the logic.
 * Do you want to filter events by something not provided by default? No problem! You can register your own custom event filters. Their performance is exactly the same as events that are provided by default.
 
-# Usage
+## Usage
 
 This system is used by registering/unregistering events and actions. This is done with the following methods:
 
@@ -52,7 +54,7 @@ This **WILL NOT** work:
 PlayerUnitEvents.AddCustomEventFilter(EVENT_PLAYER_UNIT_TRAIN_START, "UnitTypeStartsBeingTrained", GetTrainedUnitType);
 ```
 
-# Events
+## Events
 
 The following events are currently supported by default:
 

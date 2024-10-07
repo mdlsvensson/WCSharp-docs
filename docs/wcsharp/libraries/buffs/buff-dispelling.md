@@ -1,3 +1,5 @@
+# Buff Dispelling
+
 The buff system can handle dispelling of buffs on a target with matching on the `IsBeneficial` and `BuffTypes` properties. Buff types is a list of strings, allowing you to define buffs with multiple types that will be matched on via the various different `BuffSystem.Dispel` options. Additionally, the `OnDispel` handler can be used to create more complex dispel interactions, such as dispel resistance or special actions. All dispelled buffs are also returned, allowing for the dispel to interact with the results as well. To showcase the possibilities, a number of examples are outlined below.
 
 For a buff to be fully dispelled, it should set its `Stacks` property to 0, and then the system will automatically dispose the buff afterwards. For reference, below is the base implementation of `OnDispel`:

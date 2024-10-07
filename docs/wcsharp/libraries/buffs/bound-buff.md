@@ -1,3 +1,5 @@
+# BoundBuff
+
 BoundBuff adds the following properties:
 
 | Name | Description |

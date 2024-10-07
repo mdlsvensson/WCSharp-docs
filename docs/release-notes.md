@@ -1,3 +1,5 @@
+# Release Notes
+
 ## 2024-08-02
 
 * Add GetRandomAnglel, GetRandomAngleRad and IsInRange to Util.

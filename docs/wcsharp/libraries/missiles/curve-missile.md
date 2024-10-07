@@ -1,3 +1,5 @@
+# CurveMissile
+
 The CurveMissile expands on the [BasicMissile](basic-missile.md) by providing an additional Curve property. This property adds an additional rotation to the arc of the projectile, allowing it to perform significantly more complex 3D trajectories. For example, setting the curve to `90` or `-90` will make it act like a boomerang, approaching the target from a horizontal arc instead of a vertical arc.
 
 There are two special methods, `DisableArc` and `ReactiveArc`, which control the arcing behaviour (assuming the projectile has an arc that is not 0). If major changes in the targets position are encountered, the projectile can decide to disable its arc. If desired, you can re-enable it, although it may look strange if you do not handle it properly. In particular, this is useful when redirecting a missile to another target.

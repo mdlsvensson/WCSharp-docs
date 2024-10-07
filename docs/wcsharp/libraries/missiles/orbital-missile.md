@@ -1,4 +1,4 @@
-MomentumMissile adds the following properties:
+OrbitalMissile adds the following properties:
 
 | Name | Description |
 |---|---|

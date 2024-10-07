@@ -1,3 +1,5 @@
+# PlayerUnitEvents
+
 The PlayerUnitEvents system is a powerful system to replace the native `playerunitevent` events, with a focus on improving performance. It offers the following features:
 
 * Automates creation of triggers and registration of events used. The user only needs to attach actions to events.
@@ -8,7 +10,7 @@ The PlayerUnitEvents system is a powerful system to replace the native `playerun
 * Provides numerous new events for ease of use. These events still rely on the natives behind the scenes, therefore not incurring additional performance costs. They only exist to simplify the logic.
 * Do you want to filter events by something not provided by default? No problem! You can register your own custom event filters. Their performance is exactly the same as events that are provided by default.
 
-# Improvements over v2.0
+## Improvements over v2.0
 
 WCSharp.Events v2.1 improves the following aspects of v2.0:
 
@@ -17,7 +19,7 @@ WCSharp.Events v2.1 improves the following aspects of v2.0:
 * Directly supports single-source events, i.e. specific units instead of entire unit types.
 * Addresses problems with registering to the same event with the same filter multiple times. WCSharp will now merge these events for you, instead of forcing you to do so.
 
-# Usage
+## Usage
 
 This system is used by registering/unregistering events and actions. This is done with the following methods:
 
@@ -28,7 +30,8 @@ This system is used by registering/unregistering events and actions. This is don
 
 For those unfamiliar with C#, Actions can be either a method or a lambda function such as `() => { ... do some actions ... }`. Additionally, `eventType` refers to one of the event types. A full list is supplied below.
 
-# Events
+## Events
+
 Hero events are triggered by a specific hero. `filterTypeId` is a unit object and must be supplied.
 
 * HeroEvent.BecomesRevivable
@@ -209,7 +212,8 @@ Unit type events are triggered by units of the given unit type. `filterTypeId` i
 * UnitTypeEvent.Summons
 * UnitTypeEvent.UsesItem
 
-# Defining custom events
+## Defining custom events
+
 Custom events are created using `PlayerUnitEvents.AddCustomEvent`. For example, the custom event equivalent of `UnitTypeEvent.Kills` would be: `AddCustomEvent(EVENT_PLAYER_UNIT_DEATH, "SomeIdentifier", () => GetUnitTypeId(GetKillingUnit()))`. You can then use "SomeIdentifier" to register any number of events to this custom event. Absolute worth it if you want to register multiple events to the same type of filer! There is no performance difference between an event predefined and one that is custom defined.
 
 * `PlayerUnitEvents.Register(identifier, action, filterTypeId)` - The same as above, but the identifier refers to a custom event that was added using `AddCustomEventFilter`.

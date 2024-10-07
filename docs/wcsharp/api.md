@@ -1,3 +1,5 @@
+# WCSharp.Api
+
 WCSharp v3.0 offers a new API to replace the default War3Api that comes with War3Net.
 
 The WCSharp API essentially behaves as a wrapper around WC3 handles, allowing you to interact with them in a more natural way:
@@ -18,7 +20,7 @@ Thanks to CSharpLua templates, despite behaving more like C# objects than WC3 ha
 
 Methods and properties exist for almost all WC3 handles that you are likely to use in a project, but if need be you can always fall back to War3Api style code. The WCSharp API still has the entire `Common.j` and `Blizzard.j` accessible via `WCSharp.Api.Common` and `WCSharp.Api.Blizzard`, allowing you to use the same style if need be to access all of WC3's functionality. This also makes it simple to transition a project from War3Api to WCSharp.
 
-# Transitioning from War3Api to WCSharp.Api
+## Transitioning from War3Api to WCSharp.Api
 
 **If you are starting a new project, you can simply use the [WCSharp template](../getting-started.md) to get started.**
 
@@ -40,14 +42,14 @@ var coreSystemFiles = CSharpLua.CoreSystem.CoreSystemProvider.GetCoreSystemFiles
 	.Concat(new[] { "CoreSystem/WCSharp.lua" });
 ```
 
-# Tips & tricks
+## Tips & tricks
 
 * Remember that you can always use War3Api style code by simply adding a static import to `WCSharp.Api.Common`.
 * All event-related information is centered in the `@event` class, e.g. `@event.Unit` is identical to `GetTriggerUnit();`.
 * Whenever you need to clean something up to prevent a memory leak, simply call its `Dispose` method. All actions that remove, destroy or otherwise get rid of a WC3 handle has been unified under `IDisposable` implementations. Due to a bug with CSharpLua however, you should not use `using var` on WC3 handles for now.
 * Ability fields provide detailed information regarding which fields they're used in via IntelliSense, allowing you to more easily find which field you should be editing.
 
-# Things to keep in mind
+## Things to keep in mind
 
 There are a few things to keep in mind when using the WCSharp API.
 

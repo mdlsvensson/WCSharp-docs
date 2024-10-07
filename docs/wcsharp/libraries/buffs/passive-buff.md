@@ -1,3 +1,5 @@
+# PassiveBuff
+
 PassiveBuff is the simplest buff. It is intended as a simple apply-expire buff that does nothing over its duration, and as such comes with no added baggage.
 
 The below example is a simple aura that increases the targets armour by 5 when applied, and decreases it by 5 when it is disposed.

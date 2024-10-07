@@ -1,10 +1,12 @@
+# Auras
+
 The aura system offers the following features:
 
 * Automatically manages application and refreshing of buffs in a customisable manner
 * Integrates with the buff system to allow easily customisable buffs to be applied
 * Auras are bound to a specific buff to make it easier to work with
 
-# Usage
+## Usage
 
 Creating an aura requires 2 classes to be created. The first thing we need is the buff to be applied. For this, you should use AuraBoundBuff, which is a small extension of [BoundBuff](bound-buff.md) that will help ensure that the auras will stack in a manner similar to default auras. Furthermore, it will ensure that the `Stacks` property is set to the number of aura bearers applying the buff.
 
@@ -68,7 +70,7 @@ var aura = new MyAura(unit);
 AuraSystem.Add(aura);
 ```
 
-# Properties
+## Properties
 
 | Name | Description |
 |---|---|

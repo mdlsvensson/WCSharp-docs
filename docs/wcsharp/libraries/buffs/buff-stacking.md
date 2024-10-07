@@ -1,3 +1,5 @@
+# Buff Stacking
+
 The buff system can be supplied with additional parameters so that it can handle stacking buffs as desired, including things such as a stack counter and per-unit or per-player level stacking.
 
 This is achieved by supplying the `Add` method with a `StackBehaviour`. The following stack behaviours are defined:

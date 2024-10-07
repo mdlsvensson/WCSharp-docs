@@ -1,3 +1,5 @@
+# Homing Missile
+
 HomingMissile adds the following properties:
 
 | Name | Description |

@@ -1,3 +1,5 @@
+# Basic Missile
+
 The BasicMissile only implements the most basic behaviour for a missile and is generally very lightweight. The only unique property is `Arc`, which mirrors the in-game projectile arc.
 
 There are two special methods, `DisableArc` and `ReactiveArc`, which control the arcing behaviour (assuming the projectile has an arc that is not 0). If major changes in the targets position are encountered, the projectile can decide to disable its arc. If desired, you can re-enable it, although it may look strange if you do not handle it properly. In particular, this is useful when redirecting a missile to another target.

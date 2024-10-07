@@ -1,9 +1,11 @@
+# PeriodicEvents
+
 The periodic events system offers the following features:
 
 * Manages all periodic events on the same timer, while ensuring that each event fires at its appropriate time, and are removed when no longer in use.
 * Offers a PeriodicTrigger class to easily create and automatically manage multi-instanceable events.
 
-# Usage
+## Usage
 
 There are two ways to use the periodic events system. The first is using `PeriodicEvents.AddPeriodicEvent(func, period)`. This will create a PeriodicEvent handler that will continue to loop until the `func` returns false. This is mainly intended to be used when a single instance can handle everything, such as e.g. resource ticks in a map.
 
@@ -70,11 +72,11 @@ public class TestTrigger : IPeriodicAction
 }
 ```
 
-# PeriodicDisposableTrigger
+## PeriodicDisposableTrigger
 
 An alternative to `IPeriodicAction/PeriodicTrigger` is `IPeriodicDisposableAction/PeriodicDisposableTrigger`. These two essentially work the same, but add an additional `Dispose` method to every IPeriodicDisposableAction that is automatically invoked after `Active` is set to false. This alternative is used by, for example, [WCSharp.Missiles](../missiles/index.md) to clean up the special effect and perform other required actions.
 
-# SmoothTrigger / SmoothDisposableTrigger
+## SmoothTrigger / SmoothDisposableTrigger
 
 Additionally, there are "smooth" variants of the standard periodic ones. These are for when you want the actions to trigger more granularly from one another.
 

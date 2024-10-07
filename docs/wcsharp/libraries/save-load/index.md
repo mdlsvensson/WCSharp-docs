@@ -10,7 +10,7 @@ The save system is a powerful system that provides the following features:
 * Protects save files from tampering via hashcodes, optionally including the playername
 * Each save system is its own instance, allowing multiple save formats and systems to be active on a single map
 
-# Usage
+## Usage
 
 Version 2 of WCSharp.SaveLoad is backed by [WCSharp.JsonConvert](../json-convert/index.md) package, allowing it to save generic and complex data structures, including nested structures. The full scale of just what you can save is better explained in [JsonConvert's supported formats](../json-convert/supported-formats.md) and the [Save/Load Example](example.md).
 

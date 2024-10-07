@@ -1,6 +1,8 @@
+# Desyncs
+
 This page is primarily dedicated towards desyncs within the C# context. There are a lot of things that can cause desyncs, but for the more general ones I recommend looking at other online sources, such as [this thread on Hiveworkshop](https://www.hiveworkshop.com/threads/known-causes-of-desync.317486/).
 
-### GetHandleId
+## GetHandleId
 
 Do not use GetHandleId. Ever.
 
@@ -13,11 +15,11 @@ In simple terms:
 
 As such, it makes no sense to use GetHandleId within the context of C#/lua. Doing so exposes you to a number of risks while providing no advantages.
 
-### Dictionary/HashSet enumeration
+## Dictionary/HashSet enumeration
 
 This uses the lua `pairs` keyword in the background, which is prone to desyncing. You can use a SortedDictionary instead. Alternatively, you can also sort the results prior to enumerating, however...
 
-### Sorting
+## Sorting
 
 Lua does not have a stable sorting algorithm. For example, consider the following code:
 
