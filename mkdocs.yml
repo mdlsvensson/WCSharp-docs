@@ -12,27 +12,52 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.indexes
+    - navigation.footer
     # - navigation.prune
     - toc.follow
-  font:
-    text: IBM Plex Sans
-    code: Fira Code
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
   palette:
     # Light Mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     # Dark Mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: wcsharp
+      scheme: slate
+      primary: black
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-extra_css:
-  - stylesheets/extra.css
+  font:
+    text: Roboto
+    code: Fira Code
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Orden4/WCSharp
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -40,5 +65,20 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-plugins:
-  - search
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started.md
