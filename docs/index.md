@@ -1,9 +1,4 @@
----
-hide:
-    - navigation
----
-
-# WCSharp
+# Home
 
 WCSharp is a powerful set of libraries for Warcraft III map development with C#. Write your map logic in C# and transpile it to Lua code that the game engine can understand.
 
@@ -16,8 +11,8 @@ WCSharp is a powerful set of libraries for Warcraft III map development with C#.
 
 ## Quickstart
 
-!!! warning
-    If you're inexperienced with C# we recommend [the detailed instructions](getting-started.md).
+!!! info
+    Full installation instructions are available [here](getting-started.md).
 
 1. [Download the WCSharp template](https://github.com/Orden4/WCSharp/wiki/WCSharp-template).
 2. Open the solution and update NuGet packages.

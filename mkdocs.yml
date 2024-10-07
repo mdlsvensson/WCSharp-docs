@@ -13,6 +13,7 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.footer
+    - navigation.top
     # - navigation.prune
     - toc.follow
     - content.action.edit
@@ -40,6 +41,9 @@ theme:
     text: Roboto
     code: Fira Code
 extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Orden4/WCSharp
@@ -79,6 +83,52 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
+      - Release Notes: release-notes.md
+      - Desyncs: desyncs.md
+      - Upgrading to War3Net v5.x: upgrading-to-war3net-v5.x.md
   - Getting Started:
       - Installation: getting-started.md
+  - WCSharp:
+      - API: wcsharp/api.md
+      - Constant Generator: constant-generator.md
+      - Libraries:
+          - "Buffs":
+              - wcsharp/libraries/buffs/index.md
+              - AutoBuff: wcsharp/libraries/buffs/auto-buff.md
+              - BoundBuff: wcsharp/libraries/buffs/bound-buff.md
+              - PassiveBuff: wcsharp/libraries/buffs/passive-buff.md
+              - RollingBuff: wcsharp/libraries/buffs/rolling-buff.md
+              - TickingBuff: wcsharp/libraries/buffs/ticking-buff.md
+              - Stacking: wcsharp/libraries/buffs/buff-stacking.md
+              - Dispelling: wcsharp/libraries/buffs/buff-dispelling.md
+              - Auras: wcsharp/libraries/buffs/auras.md
+          - DateTime: wcsharp/libraries/date-time.md
+          - Dummies: wcsharp/libraries/dummies.md
+          - Effects: wcsharp/libraries/effects.md
+          - "Events":
+              - wcsharp/libraries/events/index.md
+              - PeriodicEvents: wcsharp/libraries/events/periodic-events.md
+              - PlayerUnitEvents v2.1: wcsharp/libraries/events/player-unit-events.md
+              - PlayerUnitEvents v2.0: wcsharp/libraries/events/player-unit-events-v2.0.md
+          - "JsonConvert":
+              - wcsharp/libraries/json-convert/index.md
+              - Supported formats: wcsharp/libraries/json-convert/supported-formats.md
+          - Knockbacks: wcsharp/libraries/knockbacks.md
+          - Lightnings: wcsharp/libraries/lightnings.md
+          - "Missiles":
+              - wcsharp/libraries/missiles/index.md
+              - BasicMissile: wcsharp/libraries/missiles/basic-missile.md
+              - CurveMissile: wcsharp/libraries/missiles/curve-missile.md
+              - HomingMissile: wcsharp/libraries/missiles/homing-missile.md
+              - MomentumMissile: wcsharp/libraries/missiles/momentum-missile.md
+              - OrbitalMissile: wcsharp/libraries/missiles/orbital-missile.md
+          - "Save/Load":
+              - wcsharp/libraries/save-load/index.md
+              - Example: wcsharp/libraries/save-load/example.md
+              - Storage space: wcsharp/libraries/save-load/storage-space.md
+              - SaveLoad v1.x: wcsharp/libraries/save-load/v1.md
+          - Shared: wcsharp/libraries/shared.md
+          - Sync: wcsharp/libraries/sync.md
+          - W3MMD: wcsharp/libraries/w3mmd.md

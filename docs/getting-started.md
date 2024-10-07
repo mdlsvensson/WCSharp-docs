@@ -17,13 +17,11 @@ If you've installed Visual Studio previously you can launch the [Visual Studio I
 
 ## WCSharp Template
 
-The easiest way to install WCSharp is to download the WCSharp template. This is a scaffold project that sets you up with everything you need for C# mapmaking.
+The easiest way to install WCSharp is to [download the WCSharp template](https://github.com/Orden4/WCSharp/wiki/WCSharp-template). This is a scaffold project that sets you up with everything you need for C# mapmaking.
 
 - A preconfigured Warcraft III map.
 - A [Visual Studio solution](https://learn.microsoft.com/en-us/visualstudio/get-started/tutorial-projects-solutions) with a Launcher and a Source project.
 - A .gitignore file for source control.
-
-[:fontawesome-solid-download: Download WCSharp Template](https://github.com/Orden4/WCSharp/wiki/WCSharp-template){ .md-button }
 
 ### Structure
 
