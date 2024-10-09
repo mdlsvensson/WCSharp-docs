@@ -45,7 +45,7 @@ WCSharpTemplate
 
 ### Setup
 
-Before launching the template, a few configuration seps are required.
+Before launching the template, a few configuration steps are required.
 
 1. Open `WCSharpTemplate.sln` with Visual Studio.
 2. Right click the `Launcher` project and select `Set as Startup Project`.
